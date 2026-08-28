@@ -1,5 +1,6 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import ScrollReveal from "../common/ScrollReveal";
 
 interface LayoutProps {
   children: React.ReactNode;
@@ -7,10 +8,11 @@ interface LayoutProps {
 
 export default function Layout({ children }: LayoutProps) {
   return (
-    <div className="min-h-screen bg-white text-gray-900">
+    <div className="portfolio-shell min-h-screen text-slate-900">
+      <ScrollReveal />
       <Navbar />
 
-      <main className="pt-16">
+      <main>
         {children}
       </main>
 

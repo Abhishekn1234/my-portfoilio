@@ -9,18 +9,12 @@ import Skills from "./src/skills/page";
 export default function Home() {
   return (
     <>
-     <main>
-      <HomePage/>
-       
-       <About/>
-       <Experience/>
-       <Skills/>
-     
-    <Projects/>
-
-      <Contact/>
-     
-    </main>
+      <HomePage />
+      <About />
+      <Experience />
+      <Skills />
+      <Projects />
+      <Contact />
     </>
   );
 }

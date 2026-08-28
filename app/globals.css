@@ -49,38 +49,38 @@
 }
 
 :root {
-  --card: oklch(1 0 0);
-  --card-foreground: oklch(0.145 0 0);
-  --popover: oklch(1 0 0);
-  --popover-foreground: oklch(0.145 0 0);
-  --primary: oklch(0.205 0 0);
-  --primary-foreground: oklch(0.985 0 0);
-  --secondary: oklch(0.97 0 0);
-  --secondary-foreground: oklch(0.205 0 0);
-  --muted: oklch(0.97 0 0);
-  --muted-foreground: oklch(0.556 0 0);
-  --accent: oklch(0.97 0 0);
-  --accent-foreground: oklch(0.205 0 0);
+  --card: oklch(0.99 0.008 95);
+  --card-foreground: oklch(0.18 0.04 250);
+  --popover: oklch(0.99 0.008 95);
+  --popover-foreground: oklch(0.18 0.04 250);
+  --primary: oklch(0.5 0.14 244);
+  --primary-foreground: oklch(0.99 0.005 95);
+  --secondary: oklch(0.92 0.05 178);
+  --secondary-foreground: oklch(0.22 0.06 232);
+  --muted: oklch(0.95 0.015 230);
+  --muted-foreground: oklch(0.47 0.035 245);
+  --accent: oklch(0.76 0.13 55);
+  --accent-foreground: oklch(0.18 0.04 250);
   --destructive: oklch(0.577 0.245 27.325);
-  --border: oklch(0.922 0 0);
-  --input: oklch(0.922 0 0);
-  --ring: oklch(0.708 0 0);
-  --chart-1: oklch(0.87 0 0);
-  --chart-2: oklch(0.556 0 0);
-  --chart-3: oklch(0.439 0 0);
-  --chart-4: oklch(0.371 0 0);
-  --chart-5: oklch(0.269 0 0);
-  --radius: 0.625rem;
-  --sidebar: oklch(0.985 0 0);
-  --sidebar-foreground: oklch(0.145 0 0);
-  --sidebar-primary: oklch(0.205 0 0);
-  --sidebar-primary-foreground: oklch(0.985 0 0);
-  --sidebar-accent: oklch(0.97 0 0);
-  --sidebar-accent-foreground: oklch(0.205 0 0);
-  --sidebar-border: oklch(0.922 0 0);
-  --sidebar-ring: oklch(0.708 0 0);
-  --background: oklch(1 0 0);
-  --foreground: oklch(0.145 0 0);
+  --border: oklch(0.88 0.025 242);
+  --input: oklch(0.91 0.02 240);
+  --ring: oklch(0.62 0.12 225);
+  --chart-1: oklch(0.5 0.14 244);
+  --chart-2: oklch(0.68 0.12 178);
+  --chart-3: oklch(0.76 0.13 55);
+  --chart-4: oklch(0.58 0.16 18);
+  --chart-5: oklch(0.38 0.09 268);
+  --radius: 0.5rem;
+  --sidebar: oklch(0.98 0.01 95);
+  --sidebar-foreground: oklch(0.18 0.04 250);
+  --sidebar-primary: oklch(0.5 0.14 244);
+  --sidebar-primary-foreground: oklch(0.99 0.005 95);
+  --sidebar-accent: oklch(0.92 0.05 178);
+  --sidebar-accent-foreground: oklch(0.22 0.06 232);
+  --sidebar-border: oklch(0.88 0.025 242);
+  --sidebar-ring: oklch(0.62 0.12 225);
+  --background: oklch(0.985 0.008 95);
+  --foreground: oklch(0.18 0.04 250);
 }
 
 .dark {
@@ -122,9 +122,82 @@
     @apply border-border outline-ring/50;
   }
   body {
-    @apply bg-background text-foreground;
+    @apply bg-background text-foreground antialiased;
   }
   html {
     @apply font-sans;
+    scroll-behavior: smooth;
+    scroll-padding-top: 5.5rem;
+  }
+}
+
+@layer base {
+  body {
+    background:
+      linear-gradient(135deg, rgb(248 250 252 / 0.96), rgb(240 253 250 / 0.92) 42%, rgb(255 251 235 / 0.74)),
+      radial-gradient(circle at top left, rgb(20 184 166 / 0.14), transparent 34%),
+      radial-gradient(circle at 80% 12%, rgb(37 99 235 / 0.12), transparent 28%);
+    min-height: 100vh;
+  }
+
+  ::selection {
+    background: rgb(20 184 166 / 0.24);
+    color: rgb(15 23 42);
+  }
+}
+
+@layer utilities {
+  .portfolio-shell {
+    background-image:
+      linear-gradient(rgb(15 23 42 / 0.045) 1px, transparent 1px),
+      linear-gradient(90deg, rgb(15 23 42 / 0.045) 1px, transparent 1px);
+    background-size: 48px 48px;
+  }
+
+  .section-band {
+    @apply px-4 py-20 sm:px-6 sm:py-24 lg:px-8 lg:py-28;
+  }
+
+  .section-container {
+    @apply mx-auto max-w-7xl;
+  }
+
+  .section-eyebrow {
+    @apply inline-flex items-center rounded-full border border-teal-200 bg-teal-50 px-3 py-1 text-xs font-bold uppercase tracking-[0.2em] text-teal-700;
+  }
+
+  .section-title {
+    @apply mt-4 text-3xl font-bold tracking-tight text-slate-950 sm:text-4xl lg:text-5xl;
+  }
+
+  .section-copy {
+    @apply mt-4 max-w-2xl text-base leading-7 text-slate-600 sm:text-lg;
+  }
+
+  .soft-card {
+    @apply rounded-[8px] border border-slate-200/80 bg-white/82 shadow-[0_18px_60px_rgb(15_23_42/0.08)] backdrop-blur;
+  }
+
+  .reveal-on-scroll {
+    opacity: 0;
+    transform: translateY(28px);
+    transition: opacity 700ms ease, transform 700ms ease;
+  }
+
+  .reveal-on-scroll.is-visible {
+    opacity: 1;
+    transform: translateY(0);
+  }
+
+  @media (prefers-reduced-motion: reduce) {
+    html {
+      scroll-behavior: auto;
+    }
+
+    .reveal-on-scroll {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
   }
 }
