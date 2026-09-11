@@ -108,7 +108,7 @@ export default function Experience() {
             <div className="flex size-10 items-center justify-center rounded-[8px] bg-teal-300 text-slate-950">
               <Sparkles className="size-5" />
             </div>
-            <h3 className="text-2xl font-bold">Internships & Freelance</h3>
+            <h3 className="text-2xl font-bold">Internships</h3>
           </div>
 
           <div className="grid gap-5 md:grid-cols-2">
