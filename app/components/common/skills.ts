@@ -22,10 +22,11 @@ export const skills = [
       { name: "PHP", level: "Intermediate" },
       { name: "Laravel", level: "Intermediate" },
       { name: "CodeIgniter", level: "Intermediate" },
-      { name: "Java", level: "Begineer" },
-      { name: "Python", level: "Begineer" },
+      { name: "Java", level: "Beginner" },
+      { name: "Python", level: "Beginner" },
       { name: "REST API", level: "Master" },
-      { name:"Nest js" level:"Begineer"}
+      { name:"Nest js" level:"Beginner"},
+      { name: "GraphQL", level:"Beginner"}
     ],
   },
 
