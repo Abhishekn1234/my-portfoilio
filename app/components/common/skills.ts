@@ -25,7 +25,7 @@ export const skills = [
       { name: "Java", level: "Beginner" },
       { name: "Python", level: "Beginner" },
       { name: "REST API", level: "Master" },
-      { name:"Nest js" level:"Beginner"},
+      { name:"Nest js" ,level:"Beginner"},
       { name: "GraphQL", level:"Beginner"}
     ],
   },
