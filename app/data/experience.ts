@@ -43,7 +43,6 @@ export const workExperience: Experience[] = [
 ];
 
 export const internshipsAndFreelance: Experience[] = [
-
   {
     role: "MERN Stack Developer Intern",
     company: "Softroniics, Palakkad",
