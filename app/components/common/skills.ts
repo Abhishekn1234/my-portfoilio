@@ -8,7 +8,9 @@ export const skills = [
       { name: "TypeScript", level: "Intermediate" },
       { name: "Angular", level: "Intermediate" },
       { name: "Tailwind CSS", level: "Master" },
-      { name: "Bootstrap", level: "Master" },
+       { name: "CSS", level: "Master" },
+       { name: "HTML", level: "Master" },
+       { name: "Bootstrap", level: "Master" },
     ],
   },
 
@@ -20,9 +22,10 @@ export const skills = [
       { name: "PHP", level: "Intermediate" },
       { name: "Laravel", level: "Intermediate" },
       { name: "CodeIgniter", level: "Intermediate" },
-      { name: "Java", level: "Intermediate" },
-      { name: "Python", level: "Intermediate" },
+      { name: "Java", level: "Begineer" },
+      { name: "Python", level: "Begineer" },
       { name: "REST API", level: "Master" },
+      { name:"Nest js" level:"Begineer"}
     ],
   },
 
