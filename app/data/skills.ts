@@ -17,6 +17,8 @@ export const skills: SkillGroup[] = [
       { name: "React.js", level: "Master" },
       { name: "Next.js", level: "Intermediate" },
       { name: "JavaScript", level: "Master" },
+       { name: "CSS", level: "Master" },
+       { name: "HTML", level: "Master" },
       { name: "TypeScript", level: "Intermediate" },
       { name: "Angular", level: "Intermediate" },
       { name: "Tailwind CSS", level: "Master" },
@@ -28,12 +30,14 @@ export const skills: SkillGroup[] = [
     items: [
       { name: "Node.js", level: "Master" },
       { name: "Express.js", level: "Master" },
+       { name: "Nest.js", level: "Beginner" },
       { name: "PHP", level: "Intermediate" },
       { name: "Laravel", level: "Intermediate" },
       { name: "CodeIgniter", level: "Intermediate" },
-      { name: "Java", level: "Intermediate" },
-      { name: "Python", level: "Intermediate" },
+      { name: "Java", level: "Beginner" },
+      { name: "Python", level: "Beginner" },
       { name: "REST API", level: "Master" },
+      { name: "GraphQL", level:"Beginner"}
     ],
   },
   {
