@@ -43,18 +43,7 @@ export const workExperience: Experience[] = [
 ];
 
 export const internshipsAndFreelance: Experience[] = [
-  {
-    role: "Freelance MERN Stack Developer",
-    company: "Cosysta",
-    period: "Jul 2025 - Nov 2025",
-    type: "Freelance",
-    description: [
-      "Developed responsive full-stack applications using MERN stack technologies.",
-      "Collaborated with teams to design, build, and optimize scalable web solutions.",
-      "Debugged issues, improved performance, and refined UI/UX flows.",
-      "Used React.js, Node.js, and PhpMyAdmin to deliver data-driven solutions.",
-    ],
-  },
+
   {
     role: "MERN Stack Developer Intern",
     company: "Softroniics, Palakkad",
