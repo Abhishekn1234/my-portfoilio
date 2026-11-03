@@ -11,7 +11,7 @@ export default function Navbar() {
 
   const handleDownloadResume = () => {
     const link = document.createElement("a");
-    link.href = "/documents/resume.pdf";
+    link.href = "/resume.pdf";
     link.download = "Abhishek_Resume.pdf"; // Name of the downloaded file
     document.body.appendChild(link);
     link.click();
