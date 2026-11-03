@@ -10,7 +10,7 @@ export const workExperience: Experience[] = [
   {
     role: "Software Engineer",
     company: "Cashigo IT Private Limited, Perinthalmanna",
-    period: "Nov 2025 - Present",
+    period: "Nov 2025 - Nov 2026",
     description: [
       "Developing and maintaining responsive full-stack web applications using MERN stack technologies.",
       "Collaborating with cross-functional teams to design, implement, and optimize scalable web solutions.",
